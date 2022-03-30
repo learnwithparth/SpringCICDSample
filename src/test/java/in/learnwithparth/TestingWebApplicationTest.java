@@ -23,6 +23,6 @@ public class TestingWebApplicationTest {
     @Test
     public void shouldReturnDefaultMessage() throws Exception {
         this.mockMvc.perform(get("/index")).andDo(print()).andExpect(status().isOk())
-                .andExpect(content().string(containsString("Hello from Index!!!")));
+                .andExpect(content().string(containsString("Hello !!!")));
     }
 }
